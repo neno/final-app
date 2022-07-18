@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-blue-500 underline
+}
+
+a:hover {
+  @apply text-blue-900
+}
+
+button {
+  @apply px-4 py-2 border border-gray-300
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white
+}
+
+form li {
+  @apply my-4
+}
+
+form li button {
+  @apply mt-4
+}
+
+input,
+select {
+  @apply p-2 border border-gray-300
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply w-[100%]
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  @apply mr-2
+}
+
+label {
+  @apply block font-bold my-2
+}
+
+label input,
+label select,
+label textarea {
+  @apply font-normal m-0 p-2
+}
